@@ -1,0 +1,5 @@
+Bielle Benjamin 2900825
+
+Exercice 3:
+	 
+Un processus zombie est un processus qui s'est achevé, mais qui dispose toujours d'un PID et reste donc encore visible dans la table des processus. On parle aussi de processus défunt.
