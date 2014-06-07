@@ -1,0 +1,30 @@
+Bibliotheque pedagogique d'ordonnancement libsched
+
+1. Contenu 
+
+repertoire src:
+---------------
+Source de la bibliotheque
+
+repertoire demo:
+---------------
+main.c : un exemple d'utilisation de la bibliotheque
+
+scen.c : un fichier contenant un scenario pour faire un TME
+
+
+2. Mode d'emploi
+
+Se referer au mode d'emploi a l'URL
+http://www.infop6.jussieu.fr/licence/2003/sys/public/libsched/libsched.html
+
+
+Pour generer la bibliotheque:
+$ cd src
+$ make
+
+Pour tester la bibliotheque:
+$ cd demo
+$ make main
+$ main
+
