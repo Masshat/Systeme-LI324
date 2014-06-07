@@ -1,0 +1,39 @@
+I) Strategie de remplacement FIFO
+
+TEST : 3 1 2 3 1 2 4 1 2 4
+ 
+ |3|1|2|3|1|2|4|1|2|4|
+----------------------
+0| |2| | | | | | | | |
+----------------------
+1| | |3| | | |X| | | |
+----------------------
+2|1| | | | | |1| | | |
+----------------------
+  D D D       D
+
+60 % de hit 
+
+On a le meme resultat avec notre programme. (mainFifo)
+
+II) Strategie de remplacement LRU
+
+TEST : 3 1 2 3 1 2 4 1 2 4
+ 
+ |3|1|2|3|1|2|4|1|2|4|
+----------------------
+0|3|1|3|3|1|2|4|1|2|4|
+----------------------
+1| |3|1|2|3|1|2|4|1|2|
+----------------------
+2| | |3|1|2|3|1|2|4|1|
+----------------------
+  D D D       D
+
+60 % de hit
+
+On a le meme resultat avec notre programme (mainLRU)
+
+
+Dans cet exemple, les deux algorithmes ont les meme nombre de defauts (4 défauts).
+Donc nous pouvons prendre les deux car dans cet exemple, ils sont aussi performant l'un que l'autre.
