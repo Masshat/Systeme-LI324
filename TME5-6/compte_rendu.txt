@@ -1,0 +1,35 @@
+Bielle Benjamin 2900825
+
+TME : 5-6
+=========
+
+I) Mise en oeuvre avec un tampon a une seule case
+   ----------------------------------------------
+
+1_1) Un semaphore doit etre introduit pour assurer la coherence de nb_recepteurs.
+
+1_2) -Parce qu'on autorise chaque recepteur a lire simultanement un message.
+     -
+II) Mise en oeuvre avec un tampon a NMAX cases
+    ------------------------------------------
+
+2_1) /
+2_2) deposer (message)
+     {
+	int i;
+	P(mutexP);
+	i = id;
+	id = (id+i)%n;
+	V(mutexP);
+	T[i] = message;
+     }
+
+     retirer (message)
+     {
+	int j;
+	P(mutexC);
+	j = ir;
+	ir = (ir+j)%n;
+	V(mutexC);
+	message = T[j];
+     }

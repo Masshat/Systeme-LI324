@@ -1,0 +1,13 @@
+#IPCPATH = /Infos/licence/2003/sys/libipc/lib
+IPCPATH = /Infos/lmd/2005/licence/ue/li324-2006fev/TME6-7/libipc/lib
+CFLAGS = -Wall -I$(IPCPATH)
+
+all: demo-ipc 
+
+demo-ipc: demo-ipc.o
+	gcc -o demo-ipc demo-ipc.o -L$(IPCPATH) -lIPC
+
+demo-ipc.o: demo-ipc.c
+	gcc -c  $(CFLAGS) demo-ipc.c
+clean:
+	rm -f demo-ipc demo-ipc.o
