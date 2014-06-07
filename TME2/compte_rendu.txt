@@ -1,0 +1,25 @@
+Bielle Benjamin 2900825
+
+#== TME 2 ==#
+
+EXERCICE 1
+
+On constate que le temps reel n'est pas de 5 secondes donc il y a eu peut etre une commutation
+
+EXERCICE 2
+
+sbksba@SALLE:LI324/TME2$ ./mytimes "./Nice" "nice -19 ./Nice" 
+
+Statistiques de : ./Nice 
+Temps total : 17.060000 
+Temps utilisateur : 0.000000
+Temps systeme : 0.000000
+Temps utils. fils : 17.040000
+Temps sys. fils : 0.000000
+
+Statistiques de : nice -19 ./Nice 
+Temps total : 16.910000 
+Temps utilisateur : 0.000000
+Temps systeme : 0.000000
+Temps utils. fils : 16.870000
+Temps sys. fils : 0.000000
